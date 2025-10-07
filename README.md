@@ -1,74 +1,89 @@
-# React + TypeScript + Vite
+import React, { useState } from 'react';
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+// Os ícones Eye e EyeOff foram removidos conforme solicitado.
 
-Currently, two official plugins are available:
+function Home() {
+  // 1. O estado armazena a string que define o tipo do input ('password' ou 'text').
+  const [pass, setPass] = useState('password');
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  function changePass() {
+    // Verifica o valor atual do estado 'pass'
+    if (pass === 'password') {
+      // Se for 'password', muda para 'text' (exibe a senha)
+      setPass('text');
+    } else {
+      // Caso contrário (se for 'text'), muda para 'password' (oculta a senha)
+      setPass('password');
+    }
+  };
 
-## React Compiler
+  return (
+    <div className="flex flex-col justify-center min-h-screen items-center bg-gray-100 p-4">
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+      <div className="flex flex-col w-full max-w-md p-8 bg-white rounded-xl shadow-2xl space-y-6">
 
-## Expanding the ESLint configuration
+        {/* Título */}
+        <h1 className="text-4xl font-extrabold text-center text-gray-800">
+          Acesso
+        </h1>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+        {/* Input de Email */}
+        <input
+          type="email"
+          placeholder="Email"
+          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-200 transition duration-150"
+        />
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+        {/* Input de Senha (Apenas o campo) */}
+        <div className="">
+          <input
+            // O 'type' é controlado diretamente pelo estado 'pass'
+            type={pass}
+            placeholder="Senha"
+            // Classe simplificada, sem o padding direito para o ícone
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-200 transition duration-150"
+          />
+        </div>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+        {/* Secção de Exibir Senha e Esqueci a Senha */}
+        <div className="flex justify-between items-center text-sm">
+          <div className="flex items-center">
+            {/* Checkbox para Exibir Senha */}
+            <input
+              id="displayPassword"
+              name="displayPassword"
+              type="checkbox"
+              onChange={changePass} 
+              className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer"
+            />
+            <label htmlFor="displayPassword" className="ml-2 block text-sm font-medium text-gray-900 select-none cursor-pointer">
+              Exibir Senha
+            </label>
+          </div>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+          {/* Link para Esqueci a Senha */}
+          <a href="#" className="text-blue-600 hover:text-blue-700 font-medium transition duration-300">
+            Esqueci a senha
+          </a>
+        </div>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+        {/* Botão de Login */}
+        <button className="w-full p-3 text-white bg-blue-600 rounded-lg font-bold text-lg hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg">
+          Entrar
+        </button>
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# tela_login
+        {/* Link para Criar Conta */}
+        <div className="text-center text-base mt-2">
+          <p className='text-gray-500'>Não tem conta? 
+            <a href="#" className="text-blue-600 hover:text-blue-800 font-semibold ml-1 transition duration-300">
+              Criar conta
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Home;
