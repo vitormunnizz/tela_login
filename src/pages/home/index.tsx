@@ -7,7 +7,9 @@ function Home() {
 
 
   function login() {
-
+    if(!email || !password){
+      alert("Enter your email and password")
+    }
     // 🔹 Limpa os campos
     setEmail('');
     setPassword('');
@@ -20,13 +22,13 @@ function Home() {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen text-gray-950">
+    <div className="flex justify-center items-center min-h-screen text-gray-900">
       <div className="flex flex-col bg-amber-50 p-6 w-full max-w-md space-y-6 rounded-2xl shadow-2xl">
         <h1 className="text-center text-4xl">Login Screen</h1>
 
         <input
           value={email}
-          className="p-2"
+          className="p-2 border border-gray-900"
           type="email"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
@@ -34,7 +36,7 @@ function Home() {
 
         <input
           value={password}
-          className="p-2"
+          className="p-2 border border-gray-900"
           type={pass}
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
