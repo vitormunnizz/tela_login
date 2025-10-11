@@ -1,7 +1,6 @@
 # 🚀 Tela de Login – React + TypeScript + Tailwind CSS
 
-Interface de login desenvolvida com **React**, **Vite**, **TypeScript** e **Tailwind CSS**, focada em **performance**, **design moderno** e **boas práticas de desenvolvimento front-end**.  
-O projeto tem como objetivo demonstrar uma estrutura limpa e reutilizável para autenticação e telas iniciais de aplicações web.
+Interface de login desenvolvida com **React**, **Vite**, **TypeScript** e **Tailwind CSS**, focada em **performance**, **design moderno** e **boas práticas de desenvolvimento front-end**.  O projeto foi estruturado para oferecer uma base sólida e escalável para aplicações web que exigem processos de **autenticação de usuário** e **gerenciamento de sessão**.
 
 <img width="1068" height="553" alt="Captura de tela de 2025-10-11 18-14-04" src="https://github.com/user-attachments/assets/c38a26f5-1902-4818-86d0-48f060d8c526" />
 
@@ -56,8 +55,8 @@ npm run dev
 ## 💻 Funcionalidades
 
 * Validação básica de campos (e-mail e senha)
-* Estilo moderno com **Tailwind CSS**
-* Layout **responsivo** e **centralizado**
+* Estilo moderno com Tailwind CSS
+* Layout responsivo e centralizado
 * Estrutura modular com componentes reutilizáveis
 * Suporte para fácil integração com APIs reais
 
@@ -70,9 +69,11 @@ npm run dev
 ## 👨‍💻 Autor
 
 **Vitor Hugo Muniz de Sousa Santos**
-* 💼 Engenheiro de Dados | Desenvolvedor Front-end
-* 📧 [vitormunnizzdev@gmail.com](mailto:vitormunnizzdev@gmail.com)
-* 🌐 [LinkedIn](www.linkedin.com/in/vitormunnizz)
+
+💼 Engenheiro da Computação | Desenvolvedor Front-end
+
+📧 [vitormunnizzdev@gmail.com](mailto:vitormunnizzdev@gmail.com)
+🌐 [www.linkedin.com/in/vitormunnizz](www.linkedin.com/in/vitormunnizz)
 
 ## 📝 Licença
 
