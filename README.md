@@ -1,25 +1,36 @@
-# 🧮 Calculadora – HTML + CSS + JavaScript
+# 🚀 Tela de Login – React + TypeScript + Tailwind CSS
 
-Projeto de **calculadora web** desenvolvida com **HTML**, **CSS** e **JavaScript puro**, com foco em **simplicidade**, **responsividade** e **boas práticas de desenvolvimento front-end**. O objetivo do projeto é demonstrar o uso de manipulação de DOM, eventos e lógica matemática em uma interface moderna e funcional.
+Interface de login desenvolvida com **React**, **Vite**, **TypeScript** e **Tailwind CSS**, focada em **performance**, **design moderno** e **boas práticas de desenvolvimento front-end**.  O projeto foi estruturado para oferecer uma base sólida e escalável para aplicações web que exigem processos de **autenticação de usuário** e **gerenciamento de sessão**.
 
-<img width="1068" height="553" alt="Preview da Calculadora" src="coloque-aqui-o-link-da-imagem" />
+<img width="1068" height="553" alt="Captura de tela de 2025-10-11 18-14-04" src="https://github.com/user-attachments/assets/c38a26f5-1902-4818-86d0-48f060d8c526" />
+
 
 ## 🧠 Tecnologias Utilizadas
 
-- **HTML5** – Estrutura semântica da aplicação  
-- **CSS3** – Estilização e design responsivo  
-- **JavaScript (ES6+)** – Lógica, interatividade e controle das operações  
-- **Flexbox / Grid** – Organização e alinhamento da interface  
+- **React** – Criação da interface e componentes reutilizáveis  
+- **TypeScript** – Tipagem estática para maior segurança no código  
+- **Vite** – Ambiente de build rápido e moderno  
+- **Tailwind CSS** – Estilização com utilitários e design responsivo  
+- **ESLint** – Padronização e qualidade de código  
 
 ## 📂 Estrutura do Projeto
 
 ```
 
-calculator-main/
-├── index.html          # Estrutura principal da aplicação
-├── style.css           # Estilos e layout da calculadora
-├── script.js           # Lógica e funcionalidades
-└── README.md           # Documentação do projeto
+tela_login-main/
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── eslint.config.js
+├── src/
+│   ├── assets/          # Imagens e ícones
+│   ├── components/      # Componentes reutilizáveis (Input, Button, etc)
+│   ├── pages/           # Páginas principais (Login, Home, etc)
+│   ├── styles/          # Estilos globais e configurações do Tailwind
+│   ├── App.tsx          # Componente principal
+│   └── main.tsx         # Ponto de entrada da aplicação
+└── README.md
 
 ````
 
@@ -29,28 +40,31 @@ calculator-main/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/calculator-main.git
+git clone https://github.com/seu-usuario/tela_login.git
 
 # Acesse o diretório
-cd calculator-main
+cd tela_login
 
-# Abra o arquivo index.html no navegador
+# Instale as dependências
+npm install
+
+# Execute o servidor de desenvolvimento
+npm run dev
 ````
 
 ## 💻 Funcionalidades
 
-* Operações básicas: soma, subtração, multiplicação e divisão
-* Botão de limpar (C) e apagar último dígito (DEL)
-* Interface moderna e responsiva
-* Interatividade com eventos de clique e teclado
-* Exibição dinâmica dos resultados em tempo real
+* Validação básica de campos (e-mail e senha)
+* Estilo moderno com Tailwind CSS
+* Layout responsivo e centralizado
+* Estrutura modular com componentes reutilizáveis
+* Suporte para fácil integração com APIs reais
 
 ## 🧱 Possíveis Melhorias
 
-* Adicionar modo escuro (Dark Mode)
-* Implementar histórico de cálculos
-* Adicionar suporte a expressões complexas (ex: porcentagem, potência, raiz)
-* Melhorar acessibilidade com navegação por teclado
+* Integração com backend de autenticação (JWT ou Firebase)
+* Implementação de Dark Mode
+* Criação de tela de cadastro e recuperação de senha
 
 ## 👨‍💻 Autor
 
@@ -59,7 +73,7 @@ cd calculator-main
 💼 Engenheiro da Computação | Desenvolvedor Front-end
 
 📧 [vitormunnizzdev@gmail.com](mailto:vitormunnizzdev@gmail.com)
-🌐 [www.linkedin.com/in/vitormunnizz](https://www.linkedin.com/in/vitormunnizz)
+🌐 [www.linkedin.com/in/vitormunnizz](www.linkedin.com/in/vitormunnizz)
 
 ## 📝 Licença
 
