@@ -80,4 +80,4 @@ Engenheiro da Computação | Desenvolvedor Front-end
 Este projeto está licenciado sob a **MIT License**.
 Sinta-se livre para usar e modificar conforme necessário, mantendo os créditos ao autor.
 
-⭐ **Se este projeto te ajudou, deixe uma estrela no repositório!**
+**Se este projeto te ajudou, deixe uma estrela no repositório!**
