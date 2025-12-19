@@ -1,4 +1,4 @@
-# 🚀 Tela de Login – React + TypeScript + Tailwind CSS
+# Tela de Login – React + TypeScript + Tailwind CSS
 
 Interface de login desenvolvida com **React**, **Vite**, **TypeScript** e **Tailwind CSS**, focada em **performance**, **design moderno** e **boas práticas de desenvolvimento front-end**.  O projeto foi estruturado para oferecer uma base sólida e escalável para aplicações web que exigem processos de **autenticação de usuário** e **gerenciamento de sessão**.
 
