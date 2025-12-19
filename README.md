@@ -5,7 +5,7 @@ Interface de login desenvolvida com **React**, **Vite**, **TypeScript** e **Tail
 <img width="1068" height="553" alt="Captura de tela de 2025-10-11 18-14-04" src="https://github.com/user-attachments/assets/c38a26f5-1902-4818-86d0-48f060d8c526" />
 
 
-## 🧠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **React** – Criação da interface e componentes reutilizáveis  
 - **TypeScript** – Tipagem estática para maior segurança no código  
@@ -13,7 +13,7 @@ Interface de login desenvolvida com **React**, **Vite**, **TypeScript** e **Tail
 - **Tailwind CSS** – Estilização com utilitários e design responsivo  
 - **ESLint** – Padronização e qualidade de código  
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 
@@ -36,7 +36,7 @@ tela_login-main/
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## Como Executar o Projeto
 
 ```bash
 # Clone o repositório
@@ -52,7 +52,7 @@ npm install
 npm run dev
 ````
 
-## 💻 Funcionalidades
+## Funcionalidades
 
 * Validação básica de campos (e-mail e senha)
 * Estilo moderno com Tailwind CSS
@@ -60,22 +60,22 @@ npm run dev
 * Estrutura modular com componentes reutilizáveis
 * Suporte para fácil integração com APIs reais
 
-## 🧱 Possíveis Melhorias
+## Possíveis Melhorias
 
 * Integração com backend de autenticação (JWT ou Firebase)
 * Implementação de Dark Mode
 * Criação de tela de cadastro e recuperação de senha
 
-## 👨‍💻 Autor
+## Autor
 
 **Vitor Hugo Muniz de Sousa Santos**
 
-💼 Engenheiro da Computação | Desenvolvedor Front-end
+Engenheiro da Computação | Desenvolvedor Front-end
 
-📧 [vitormunnizzdev@gmail.com](mailto:vitormunnizzdev@gmail.com)
-🌐 [www.linkedin.com/in/vitormunnizz](www.linkedin.com/in/vitormunnizz)
+- [vitormunnizzdev@gmail.com](mailto:vitormunnizzdev@gmail.com)
+- [www.linkedin.com/in/vitormunnizz](www.linkedin.com/in/vitormunnizz)
 
-## 📝 Licença
+## Licença
 
 Este projeto está licenciado sob a **MIT License**.
 Sinta-se livre para usar e modificar conforme necessário, mantendo os créditos ao autor.
