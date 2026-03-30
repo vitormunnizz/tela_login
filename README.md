@@ -72,7 +72,7 @@ npm run dev
 
 Engenheiro da Computação | Desenvolvedor Front-end
 
-- [vitormunnizzdev@gmail.com](mailto:vitormunnizzdev@gmail.com)
+- [vitormunnizz@gmail.com](mailto:vitormunnizz@gmail.com)
 - [www.linkedin.com/in/vitormunnizz](www.linkedin.com/in/vitormunnizz)
 
 ## Licença
